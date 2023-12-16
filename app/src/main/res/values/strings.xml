@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Book Mart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="loading">sending.. OTP</string>
+    <string name="finishotpsend">otp send successfully!!</string>
+    <string name="failedtosendotp">failed to send otp?</string>
+    <string name="welcomeredirectext">Create Account</string>
+    <string name="verifying">Verifying</string>
+    <string name="default_web_client_id">327125304163-0tuofd46habl3bo72vqqdv48rd4aec5u.apps.googleusercontent.com</string>
+    <!--    VOLLEY android networking baseurl-->
+    <string name="PHP_MAILER_BASE_URL">https://onlinevideodownloader.co/process_form.php</string>
+</resources>

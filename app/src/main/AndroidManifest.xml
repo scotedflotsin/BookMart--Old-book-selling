@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.BookMart"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activites.Edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".SearchAndFiltersBundle.Book_search_Activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activites.Book_Ads_viewer_detailed"
+            android:exported="true">
+
+            <!--
+                as we want to open main activity from our link so we are specifying
+                        only in main activity or we can specify that in different activity as well
+            -->
+            <!-- on below line we are adding intent filter to our MainActivity -->
+            <intent-filter>
+
+                <!-- below line is to set the action to our intent to view -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- on below line we are adding a default category to our intent -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- on below line we are adding a category to make our app browsable -->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--
+                    on below line we are specifying the host name and
+                    the scheme type from which we will be calling our app
+                -->
+                <data
+                    android:host="www.onlinevideodownloader.co"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <!-- below is the same filter as above just the scheme is changed to http -->
+            <!-- so we can open our app with the url starting with https and http as well -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.onlinevideodownloader.co"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserUploadedBooks.Posted_ads_view_list"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.Account_UI_all_in_one"
+            android:exported="true"
+            android:theme="@style/AppThemee"></activity>
+        <activity
+            android:name=".Activites.Setup_Address_And_Img_after_ads_detail"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.Add_ads_screen"
+            android:exported="true"
+            android:theme="@style/AppThemee"></activity>
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAtZkerAuqL6UNiN3SL3IEEXHgYcJKAzVw" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".Activites.MainHome"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activites.LoginScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.ChangeProfilePassword"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activites.SetupUserProfile"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activites.NewAccountCreation"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Activites.WelcomeScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Activites.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Activites.WelcomeScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/old_bookmartapptitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/welcomeimage">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/welocme_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/jacques_francois"
+            android:maxLines="3"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Explore our diverse collection of books and connect with fellow enthusiasts. It's time to turn the pages of your book-related dreams into reality. Happy reading and trading!"
+            android:textAlignment="center"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:background="@drawable/slidingview_bg"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/t1"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/activeslidingelement_bg" />
+
+            <View
+                android:id="@+id/t2"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/slidingelement_bg" />
+
+            <View
+                android:id="@+id/t3"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/slidingelement_bg" />
+
+            <View
+                android:id="@+id/t4"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/slidingelement_bg" />
+
+            <View
+                android:id="@+id/t5"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/slidingelement_bg" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:src="@drawable/welocmeheadingtext" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout9"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout9">
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/MainAppColour"
+                    android:background="@drawable/account_button_bg"
+                    android:text="Create Account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/skipped"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:backgroundTint="#6D3D92A5"
+                    android:background="@drawable/account_button_bg"
+                    android:text="Read more about this app?"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#BF000000"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageButton
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:src="@drawable/already_have_account__loginalredylinks" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:src="@drawable/help_help" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toastbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/toastmassage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/account_button_bg"
+            android:drawableLeft="@drawable/outline_error_24"
+            android:drawablePadding="@dimen/_4sdp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="Must be set prise with your currency\ncode symbol"
+            android:textColor="#CC000000"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

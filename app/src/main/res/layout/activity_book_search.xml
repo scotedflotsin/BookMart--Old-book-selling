@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SearchAndFiltersBundle.Book_search_Activity">
+
+
+    <LinearLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FEFEFE"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:rotation="180"
+            android:src="@drawable/baseline_arrow_forward_24">
+
+        </ImageButton>
+
+
+        <EditText
+            android:id="@+id/searingedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/search__1_"
+            android:drawableRight="@drawable/baseline_close_24"
+            android:drawablePadding="@dimen/_4sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Search..."
+            android:maxLength="80"
+            android:maxLines="1"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+
+        <ImageButton
+            android:id="@+id/filters_show"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/white"
+            android:saveEnabled="false"
+            android:src="@drawable/baseline_filter_list_24"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/autoCompleteTextView"
+            app:layout_constraintTop_toTopOf="@+id/autoCompleteTextView">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/filters_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintLayout4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="114dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/jacques_francois"
+            android:text="Choose filters"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout16"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categries_text_bg"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/_2sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="Medium"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="Year"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/schoolstandard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="School standard"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/prefferdcourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="Preferred course"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/intrest"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="Intrest"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/csprogramming"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="CS and Programming"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buisnessfinace"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="Business and finance"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/storyandcomics"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="Story and comics"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/author"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="subject"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/prise"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:drawableLeft="@drawable/baseline_paid_24"
+                        android:drawablePadding="@dimen/_20sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="prise"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/astrology"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="astrology"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/horror"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="Horror book"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:background="@color/MainAppColour"
+                        android:text="condition"
+                        android:textAllCaps="false"
+                        android:textColor="#FEFEFE" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/filtecons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="#F7F7F7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout16"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/filter_suggestion_ryc" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/filter_op"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:background="@drawable/search_bg"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/addedfilters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clearfilter"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/account_button_bg"
+                android:backgroundTint="@color/black"
+                android:maxLines="1"
+                android:text="Clear All"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/apply"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="@drawable/createaccount_bg"
+                android:maxLines="1"
+                android:text="Apply"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/button6"
+                app:layout_constraintEnd_toStartOf="@+id/button6"
+                app:layout_constraintTop_toTopOf="@+id/button6" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchresult_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/loca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_place_24"
+                android:gravity="center"
+                android:text="Achalganj/unnao"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/final_upper_rcy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:text=" Most similar search results"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/books"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="gone"
+        app:shimmer_auto_start="true"
+        app:shimmer_duration="2000"
+        app:shimmer_repeat_delay="2000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D8C8C8C"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="24dp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:progressDrawable="@drawable/light_progress_bar"
+                android:visibility="visible" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ScrollView
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/constraintLayout4"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filter_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/account_button_bg"
+                android:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchsuggetion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="visible"
+                tools:listitem="@layout/search_suggestion_rcy" />
+
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Most similar with your search..."
+                android:textColor="#BF000000"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/search__1_"
+        android:visibility="visible"
+        app:backgroundTint="@color/white"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_85sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ryc_loading_shimmer_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:listitem="@layout/book_loading_shimmer_rcy">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/page_not_found" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="(: your search not found on server!\n Try new keyword"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/account_button_bg"
+            android:backgroundTint="@color/black"
+            android:text="Try other relevant word"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/changelocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/account_button_bg"
+            android:backgroundTint="#CD000000"
+            android:text="Try diff location or radius"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

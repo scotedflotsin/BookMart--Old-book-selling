@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="MainAppColour">#3D92A5</color>
+<!--    <color name="MainAppColour">#FF9800</color>-->
+    <color name="MainDualColour">#E2EFF2</color>
+    <color name="AppBaseColour">#FFFFFF</color>
+o    <color name="checkboxcolour">#4CAF50</color>
+    <color name="toastbodycolournegative">#F8E4E4</color>
+    <color name="toastbodycolourpositive">#574CAE50</color>
+
+
+</resources>

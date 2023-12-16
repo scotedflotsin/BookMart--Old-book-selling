@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BookMart" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/MainAppColour</item>-->
+
+    </style>
+    <style name="MyCheckboxStyle">
+        <item name="colorControlNormal">@color/checkboxcolour</item>
+        <item name="colorAccent">#022403</item>
+    </style>
+    <style name="fab_3_rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+        <item name="cornerSizeBottomLeft">40dp</item>
+        <item name="cornerSizeBottomRight">40dp</item>
+        <item name="cornerSizeTopLeft">40dp</item>
+        <item name="cornerSizeTopRight">40dp</item>
+    </style>
+    <style name="Theme.BookMart" parent="Base.Theme.BookMart" />
+    <!-- Here you can add color of your choice  -->
+    <color name="ucrop_color_toolbar">@color/MainDualColour</color>
+    <color name="ucrop_color_widget_active">@color/MainAppColour</color>
+
+        <color name="colorPrimary">#0F9D58</color>
+        <color name="colorPrimaryDark">#056008</color>
+        <color name="colorAccent">#E39D36</color>
+
+    <!-- Base application theme. -->
+    <style name="AppThemee" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ucrop_color_widget_active</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/MainAppColour</item>
+    </style>
+
+    <style name="LowerCaseTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="CustomAnimationTheme">
+        <item name="android:windowAnimationStyle">@style/CustomAnimation</item>
+    </style>
+
+    <style name="CustomAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out</item>
+    </style>
+
+</resources>

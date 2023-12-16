@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@drawable/categries_design_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/_1sdp">
+
+
+    <ImageView
+        android:id="@+id/cate_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/book" />
+
+    <TextView
+        android:id="@+id/cate_name"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_options_bg"
+        android:fontFamily="@font/jacques_francois"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:minWidth="@dimen/_45sdp"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="History"
+        android:textAlignment="center"
+        android:textColor="#B9000000"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cate_image" />
+
+    <ImageView
+        android:id="@+id/selection_image"
+        android:layout_width="@dimen/_11sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@+id/cate_image"
+        app:layout_constraintTop_toTopOf="@+id/cate_image"
+        app:srcCompat="@drawable/baseline_check_circle_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

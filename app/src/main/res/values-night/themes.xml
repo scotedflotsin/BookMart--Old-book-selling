@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- res/values-night/styles.xml -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Dark mode styles -->
+        <item name="colorPrimary">@color/MainAppColour</item>
+    </style>
+</resources>
+
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--&lt;!&ndash; Dark application theme. &ndash;&gt;-->
+<!--<style name="Base.Theme.BookMart" parent="Theme.AppCompat.DayNight.NoActionBar">-->
+<!--    &lt;!&ndash; Customize your dark theme here. &ndash;&gt;-->
+<!--    &lt;!&ndash; Add only the attributes that need to be different from the light theme &ndash;&gt;-->
+<!--</style>-->
+
+<!--<style name="AppTheme_one" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
+<!--    &lt;!&ndash; Customize your dark theme here &ndash;&gt;-->
+<!--    &lt;!&ndash; You can override only the colors that need to be different in dark mode &ndash;&gt;-->
+<!--    <item name="colorPrimary">@color/colorPrimaryDarkMode</item>-->
+<!--    <item name="colorPrimaryDark">@color/colorPrimaryDarkDarkMode</item>-->
+<!--    <item name="colorAccent">@color/colorAccentDarkMode</item>-->
+<!--    &lt;!&ndash; Add other theme attributes as needed &ndash;&gt;-->
+<!--</style>-->
+
+<!--&lt;!&ndash; ... Other styles ... &ndash;&gt;-->
+
+<!--<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+<!--    &lt;!&ndash; Customize your dark theme here. &ndash;&gt;-->
+<!--    <item name="colorPrimary">@color/colorPrimaryDarkMode</item>-->
+<!--    <item name="colorPrimaryDark">@color/colorPrimaryDarkDarkMode</item>-->
+<!--    <item name="colorAccent">@color/colorAccentDarkMode</item>-->
+<!--</style>-->
+
+<!--&lt;!&ndash; ... Other styles ... &ndash;&gt;-->
+
+<!--&lt;!&ndash; Add any other styles or colors specific to dark mode here &ndash;&gt;-->
+<!--</resources>-->

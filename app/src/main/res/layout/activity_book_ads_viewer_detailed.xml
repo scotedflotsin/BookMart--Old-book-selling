@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_55sdp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scroolview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4FC5C5C5"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/fullbackexit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@drawable/search_bg"
+                        android:drawableLeft="@drawable/search__1_"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:gravity="bottom"
+                        android:hint="Search At Old Book Mart"
+                        android:iconifiedByDefault="false"
+                        android:padding="@dimen/_9sdp"
+                        android:textColor="#85141414"
+                        android:textColorHint="#B3000000"
+                        android:textSize="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/fullbackexit"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/baseline_filter_list_24" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerrahu_viewhero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:id="@+id/imageslide"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_300sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/activeslidingelement_bg"
+                            android:backgroundTint="#163D92A5"
+                            android:visibility="visible"
+                            app:iss_auto_cycle="true"
+                            app:iss_delay="1000"
+                            app:iss_period="1000"
+                            app:iss_text_align="CENTER">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:id="@+id/backbutton"
+                                    android:layout_width="19dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:background="@drawable/ads_view_top_icon_bg"
+                                    android:rotationY="-180"
+                                    android:src="@drawable/baseline_arrow_forward_24" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:padding="@dimen/_10sdp">
+
+                                    <ImageView
+                                        android:id="@+id/fullscreen"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_8sdp"
+                                        android:rotationY="-180"
+                                        android:src="@drawable/baseline_crop_free_24" />
+
+                                    <ImageView
+                                        android:id="@+id/sharebook"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="@dimen/_8sdp"
+                                        android:rotationY="-180"
+                                        android:src="@drawable/baseline_reply_24" />
+
+                                    <ImageView
+                                        android:id="@+id/wishlist"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:rotationY="-180"
+                                        android:src="@drawable/outline_favorite_border_24" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.denzcoskun.imageslider.ImageSlider>
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmer_view_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:shimmer_auto_start="true"
+                            app:shimmer_intensity="0.5"
+                            app:shimmer_width_ratio="0.5">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:focusable="true"
+                                android:src="@drawable/group_101reautedmark">
+
+                            </ImageView>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/maintitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RS Agarwal Mathematic Algebraic new and expensive more time costly"
+                                android:textColor="#DD000000"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/postedon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Posted on 23/23/2023" />
+                        </LinearLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:visibility="visible">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Book Name"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/bookname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="R.S Agarwal" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Book Title"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/booktitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="Harsh Verma &amp; Elis maria" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Author Name"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/author_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="2024" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Publication year"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/publicationyear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="HarisElis pvt ltd" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Publisher"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/publisher"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="NCERT" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Based on"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/basedon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="11th" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Standard"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/standard"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="CBSE" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Board preference"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/boardpreffernce"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="English, French" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medium"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="English, French" />
+                            </TableRow>
+
+                            <TableRow android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Condition"
+                                    android:textColor="#BF000000"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/condition"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/right_barrier_in_ads_view_main_bg"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:text="New" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prize Demand"
+                                    android:textColor="@color/MainAppColour"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/bookprise"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:text="$ 23.45"
+                                    android:textColor="@color/MainAppColour"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                        </TableLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Description"
+                                android:textColor="#BF000000"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_9sdp"
+                                android:text="Unlock the full potential of the digital age with Mastering the Digital Realm a comprehensive and accessible guide to the world of computer science and technology. Whether you're a curious beginner or an experienced techie, this book is your roadmap to understanding and navigating the ever-evolving landscape of computers and digital technology." />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/textView31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:textColor="#BF000000"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/localaddresh"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:text="Achalganj/Unnao, 209801, UP,India Near PNB abnk"
+                                android:textColor="#E7C344" />
+
+                            <com.google.android.gms.maps.MapView
+                                android:id="@+id/mapView"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_100sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:apiKey="AIzaSyAtZkerAuqL6UNiN3SL3IEEXHgYcJKAzVw"
+                                android:background="@drawable/categries_design_bg" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/account_options_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/userprofilepic"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
+                                android:layout_margin="@dimen/_2sdp"
+                                android:src="@drawable/welcomeimage"></de.hdodenhof.circleimageview.CircleImageView>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayout14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/username"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Harsh Verma"
+                                        android:textColor="@color/MainAppColour"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <TextView
+                                        android:id="@+id/membersince"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Member since 2023"
+                                        android:textSize="@dimen/_10sdp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <ImageButton
+                                        android:id="@+id/viewuserprofile"
+                                        android:layout_width="@dimen/_24sdp"
+                                        android:layout_height="@dimen/_24sdp"
+                                        android:layout_marginEnd="@dimen/_10sdp"
+                                        android:backgroundTint="@color/white"
+                                        android:src="@drawable/baseline_keyboard_arrow_right_24">
+
+                                    </ImageButton>
+                                </LinearLayout>
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginRight="@dimen/_6sdp"
+                            android:text="More offered by Harsh Verma"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp">
+
+                        </TextView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rec"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:visibility="visible" >
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <Button
+                                android:id="@+id/loadmore"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="end"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:background="@drawable/account_options_bg"
+                                android:drawableRight="@drawable/baseline_refresh_24"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:gravity="end|center_vertical"
+                                android:text="Load more"
+                                android:textAllCaps="false" />
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="wrap_content"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/demo_ads_image" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@color/white"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/massagenow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/chat_button_bg"
+            android:drawableLeft="@drawable/baseline_chat_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:enabled="false"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="Massage Now"
+            android:textAllCaps="false"
+            android:textColor="#52CE5F" />
+
+        <Button
+            android:id="@+id/callnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/call_button_bg"
+            android:drawableLeft="@drawable/baseline_phone_enabled_24"
+            android:enabled="false"
+            android:hint="Massage Now"
+            android:paddingStart="@dimen/_17sdp"
+            android:paddingEnd="@dimen/_17sdp"
+            android:text="Call Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imageslider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activeslidingelement_bg"
+        android:backgroundTint="#EAEAEA"
+        android:visibility="gone"
+        app:iss_auto_cycle="true"
+        app:iss_delay="1000"
+        app:iss_period="1000"
+        app:iss_text_align="CENTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/backbuttonn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/ads_view_top_icon_bg"
+                android:rotationY="-180"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/exitfullscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:rotationY="-180"
+                    android:src="@drawable/baseline_fullscreen_exit_24" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.denzcoskun.imageslider.ImageSlider>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

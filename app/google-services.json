@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "327125304163",
+    "project_id": "old-book-mart",
+    "storage_bucket": "old-book-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327125304163:android:0280308790666bcf7d4956",
+        "android_client_info": {
+          "package_name": "com.bookmart.bookmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327125304163-t69j470k70aglghjp18j9kd4s8nbufpr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookmart.bookmart",
+            "certificate_hash": "bb0a38b7b78b0e29f66cde58e7446cd20d167a80"
+          }
+        },
+        {
+          "client_id": "327125304163-0tuofd46habl3bo72vqqdv48rd4aec5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLeg-M8dqidsV3fjO9ViRQecLtCFeaWv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327125304163-0tuofd46habl3bo72vqqdv48rd4aec5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
